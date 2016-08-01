@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Lista</servlet-name>
+        <servlet-class>com.candidjava.servlet.download.Lista</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DownloadServlet</servlet-name>
+        <url-pattern>/DownloadServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DownloadServlet</servlet-name>
+        <servlet-class>com.candidjava.servlet.download.DownloadServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Uploadservlet</servlet-name>
+        <servlet-class>com.candidjava.servlet.upload.UploadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Uploadservlet</servlet-name>
+        <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>Lista</servlet-name>
+        <url-pattern>/Lista</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>fileupload.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
